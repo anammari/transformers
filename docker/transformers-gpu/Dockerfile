@@ -19,7 +19,7 @@ RUN python3 -m pip install --no-cache-dir --upgrade pip && \
     torch
 
 WORKDIR /workspace
-COPY . transformers/
+COPY ./ transformers/
 RUN cd transformers/ && \
     python3 -m pip install --no-cache-dir .
 
